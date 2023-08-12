@@ -1,0 +1,134 @@
+.header-main-container {
+    background-color: #1F2833;
+    /* width: 100%; */
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-logo-title {
+    color: #66FCF1;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    
+    
+}
+
+
+.menu-pages-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-pages-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.menu-list-page {
+    color: #66FCF1;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.3rem;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: all ease-in-out 0.3s;
+}
+  
+  
+.menu-list-page span {
+    transition: color 0.1s;
+    transition: all ease-in-out 0.3s;
+}
+  
+.menu-list-page:hover span {
+    animation: slideColors 2s linear infinite;
+    cursor: pointer;
+}
+  
+@keyframes slideColors {
+    0% {
+      color: #1F2833;
+    }
+    33.33% {
+      color: #C5C6C7;
+    }
+    66.67% {
+      color: #66FCF1;
+    }
+    100% {
+      color:  #45A29E;
+    }
+  }
+
+.auth-and-actions-container {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    margin-right: 1.5vw;
+}
+
+.profile-btn,
+.cart-btn,
+.search-btn {
+    width: 2rem;
+    background-color: transparent;
+    border: 0px solid transparent;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: all ease-in-out 0.15s;
+}
+
+.fa-user,
+.fa-cart-shopping,
+.fa-magnifying-glass {
+    color: #66FCF1;
+    font-size: 1.7rem;
+}
+
+.auth-btn {
+    font-size: 1.4rem;
+    background-color: transparent;
+    color: #66FCF1;
+    cursor: pointer;
+    border: none;
+    transition: all ease-in-out 0.3s;
+    padding: 5px 5px;
+    margin-right: 20px;
+}
+
+.auth-btn:hover {
+    animation: pulsate 1s infinite;
+}
+
+@keyframes pulsate {
+    0%, 100% {
+      border: 1px solid transparent;
+      border-radius: 10px;
+      transform: scale(1);
+    }
+    50% {
+      border: 1px solid #66FCF1;
+      border-radius: 10px;
+      transform: scale(1.1);
+    }
+}
+
+.profile-btn:hover,
+.cart-btn:hover,
+.search-btn:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}

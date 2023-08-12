@@ -1,0 +1,30 @@
+.categories-container {
+    margin-left: 150px;
+    margin-right: 150px;
+    color: #fff;
+}
+
+.section-title {
+    font-size: 1.4rem;
+    margin-bottom: 2px;
+}
+
+.section-separator {
+    margin-bottom: 20px;
+}
+
+.categories-slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.category-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    max-height: 320px;;
+    background-color: #fff;
+}
