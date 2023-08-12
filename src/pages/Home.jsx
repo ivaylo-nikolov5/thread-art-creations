@@ -5,6 +5,7 @@ import Header from "../components/HomePage/Header";
 import HomeImageSlider from "../components/HomePage/HomeImageSlider";
 import AboutCompany from "../components/HomePage/AboutCompany";
 import Categories from "../components/HomePage/Categories";
+import SignUpDiv from "../components/HomePage/SignUpDiv";
 
 function Home() {
     return (
@@ -16,6 +17,8 @@ function Home() {
             <AboutCompany />
 
             <Categories />
+
+            <SignUpDiv />
             
         </div>
     )
