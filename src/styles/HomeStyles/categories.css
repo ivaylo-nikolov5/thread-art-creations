@@ -33,10 +33,12 @@
     background-color: #C5C6C7;
     overflow: hidden;
     cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .category-label {
-    color: #000;
+    color: #fff;
     font-weight: bold;
     font-size: 1.5rem;
 }
@@ -48,7 +50,7 @@
     justify-content: center;
     align-items: center;
     padding: 5px 10px;
-    background-color: #45A29E;
+    background-color: #45A29E90;
     min-width: 70px;
     border-radius: 3px;
     z-index: 101;
@@ -64,3 +66,27 @@
 .category-container:hover .category-img{
     scale: 1.05;
 }
+
+.fa-arrow-right {
+    margin-left: 10px;
+    font-size: 0.5rem;
+}
+
+.link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  #66FCF1;
+}
+
+.items-link {
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+
+.link-container:hover {
+    color: #45A29E;
+}
+
+

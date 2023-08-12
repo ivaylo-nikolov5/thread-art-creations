@@ -15,10 +15,11 @@ function CategoriesChoice() {
                     </div>
                     
                 </div>
-
-                <p className="items-link">See the items 
-                        <span></span>
-                </p>
+                
+                <div className="link-container">
+                    <p className="items-link">See the items</p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
 
             </div>
 
@@ -31,9 +32,10 @@ function CategoriesChoice() {
                     
                 </div>
 
-                <p className="items-link">See the items 
-                        <span></span>
-                </p>
+                <div className="link-container">
+                    <p className="items-link">See the items</p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
             </div>
 
             <div>
@@ -45,9 +47,10 @@ function CategoriesChoice() {
                     
                 </div>
 
-                <p className="items-link">See the items 
-                        <span></span>
-                </p>
+                <div className="link-container">
+                    <p className="items-link">See the items</p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
             </div>
 
             <div>
@@ -59,9 +62,10 @@ function CategoriesChoice() {
                     
                 </div>
 
-                <p className="items-link">See the items 
-                        <span></span>
-                </p>
+                <div className="link-container">
+                    <p className="items-link">See the items</p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
 
             </div>
         </div>
