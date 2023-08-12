@@ -5,8 +5,8 @@
 /* #45A29E */
 
 .about-company-container {
-    margin-top: 270px;
-    margin-bottom: 270px;
+    margin-top: 220px;
+    margin-bottom: 220px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-left: 100px;
