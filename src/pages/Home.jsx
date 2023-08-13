@@ -6,6 +6,7 @@ import HomeImageSlider from "../components/HomePage/HomeImageSlider";
 import AboutCompany from "../components/HomePage/AboutCompany";
 import Categories from "../components/HomePage/Categories";
 import SignUpDiv from "../components/HomePage/SignUpDiv";
+import CompanyInfo from "../components/HomePage/CompanyInfo";
 
 function Home() {
     return (
@@ -19,6 +20,8 @@ function Home() {
             <Categories />
 
             <SignUpDiv />
+
+            <CompanyInfo />
             
         </div>
     )

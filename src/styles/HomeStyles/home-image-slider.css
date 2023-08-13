@@ -1,7 +1,7 @@
 .slider {
     position: relative;
 }
-  
+
 .image-container {
     display: flex;
     flex-direction: column;
@@ -12,7 +12,7 @@
     position: relative;
     width: 100%;
     /* clip-path: inset(0 0 40vh 0); */
-    z-index: 1; 
+    z-index: 1;
 }
 
 .arrow-prev {
@@ -27,7 +27,6 @@
     z-index: 20;
     top: 50vh;
     right: 50px;
-    
 }
 
 .arrow-prev,
@@ -46,12 +45,15 @@
 .arrow-prev:hover,
 .arrow-next:hover {
     scale: 1.1;
-
 }
 
-.fa-arrow-left,
-.fa-arrow-right {
+.fa-arrow-left {
     scale: 2.5;
+    color: #45A29E;
+}
+
+.fa-arrow-right {
+    scale: 4;
     color: #45A29E;
 }
 
@@ -105,4 +107,3 @@
     cursor: pointer;
     box-shadow: none;
 }
-
