@@ -10,8 +10,6 @@ function SignUpDiv() {
                 <p className="sign-up-div-p">or choose between 100+ designs</p>
                 <button className="sign-up-btn">SIGN UP</button>
             </div>
-
-            <div className="bottom-line"></div>
         </div>
         
     );

@@ -1,0 +1,158 @@
+.company-info-container {
+    border-top: 0.1px solid #383838;
+    margin-top: 30px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+    color: #47ada6;
+    background-color: #171717;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.company-socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-logo {
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.company-name {
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+.socials-container {
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fa-facebook,
+.fa-instagram,
+.fa-youtube,
+.fa-x-twitter {
+    font-size: 1.5rem;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+    color: #66FCF1;
+}
+
+.fa-facebook:hover {
+    color: #0165E1;
+}
+
+.fa-instagram:hover {
+    color: #d62976;
+}
+
+.fa-youtube:hover {
+    color: #ff0000;
+}
+
+.fa-x-twitter:hover {
+    color: #000;
+}
+
+.services-list,
+.my-acc-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 5px;
+}
+
+.fa-chevron-right {
+    margin-right: 5px;
+}
+
+.service-item {
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.service-item:hover {
+    color: #66FCF1;
+}
+
+.service-item:hover .fa-chevron-right {
+    margin-left: 2px;
+}
+
+.section-title {
+    color: #66FCF1;
+}
+
+.text-logo,
+.company-name {
+    color: #66FCF1;
+}
+
+.my-acc-list-item:hover {
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+    color: #66FCF1;
+}
+
+.newsletter-text {
+    max-width: 330px;
+}
+
+.company-services {
+    width: 160px;
+}
+
+.newsletter-subscription-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 8px;
+    background-color: #383838;
+    width: fit-content;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.newsletter-email-field {
+    background-color: #171717;
+    height: 27px;
+    border: 0;
+    border-radius: 2px;
+    width: 250px;
+    padding-left: 5px;
+    font-weight: bold;
+    color: #66FCF1;
+}
+
+.newsletter-subscribe-btn {
+    height: 27px;
+    padding: 3px 10px;
+    border: 0;
+}
+
+
+/* #0B0C10 */
+
+
+/* #1F2833 */
+
+
+/* #C5C6C7 */
+
+
+/* #66FCF1 */
+
+
+/* #45A29E */

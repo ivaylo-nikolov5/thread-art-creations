@@ -50,7 +50,13 @@ function CompanyInfo() {
                 </p>
 
                 <div className="newsletter-subscription-container">
-                    <input type="text" name="" id="" className="newsletter-email-field" />
+                    <input 
+                        type="text" 
+                        name="" 
+                        id="" 
+                        className="newsletter-email-field" 
+                        placeholder="Enter email"    
+                    />
                     <button className="newsletter-subscribe-btn">Subscribe</button>
                 </div>
 
