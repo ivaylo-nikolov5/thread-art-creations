@@ -57,7 +57,10 @@ function CompanyInfo() {
                         className="newsletter-email-field" 
                         placeholder="Enter email"    
                     />
-                    <button className="newsletter-subscribe-btn">Subscribe</button>
+                    <button className="newsletter-subscribe-btn">
+                        <i class="fa-solid fa-envelope"></i>    
+                        Subscribe
+                    </button>
                 </div>
 
             </div>

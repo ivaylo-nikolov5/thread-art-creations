@@ -136,10 +136,29 @@
     color: #66FCF1;
 }
 
+.newsletter-email-field:focus {
+    outline: none;
+}
+
 .newsletter-subscribe-btn {
     height: 27px;
     padding: 3px 10px;
     border: 0;
+    background-color: #47ada6;
+    color: #fff;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+
+.newsletter-subscribe-btn:hover {
+    color: #383838;
+    background-color: #66FCF1;
+}
+
+.fa-envelope {
+    margin-right: 4px;
 }
 
 
