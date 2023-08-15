@@ -7,6 +7,7 @@ import AboutCompany from "../components/HomePage/AboutCompany";
 import Categories from "../components/HomePage/Categories";
 import SignUpDiv from "../components/HomePage/SignUpDiv";
 import CompanyInfo from "../components/HomePage/CompanyInfo";
+import Footer from "../components/HomePage/Footer";
 
 function Home() {
     return (
@@ -22,6 +23,8 @@ function Home() {
             <SignUpDiv />
 
             <CompanyInfo />
+
+            <Footer />
             
         </div>
     )

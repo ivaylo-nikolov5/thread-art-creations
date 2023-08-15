@@ -1,0 +1,51 @@
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.links-list {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+}
+
+.info-link {
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.info-link:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+}
+
+.fa-cc-visa,
+.fa-cc-mastercard,
+.fa-cc-paypal,
+.fa-cc-stripe {
+    font-size: 1.7rem;
+    transition: all ease-in-out 0.2s
+}
+
+.fa-cc-visa:hover,
+.fa-cc-mastercard:hover,
+.fa-cc-paypal:hover,
+.fa-cc-stripe:hover {
+    color: #66FCF1;
+}
