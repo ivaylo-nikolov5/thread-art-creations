@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/HomeStyles/footer.css";
-import { Tooltip } from "react-tooltip";
+import Tippy from '@tippyjs/react';
 
 
 function Footer() {
@@ -24,33 +24,21 @@ function Footer() {
 
 
                     <div className="payment-methods">
-                        <i 
-                            class="fa-brands fa-cc-visa" 
-                            data-tooltip-id="visa" 
-                            data-tooltip-content="Visa"
-                        ></i>
-                        <Tooltip id="visa" style={{color: "#66FCF1"}}/>
+                        <Tippy content={<span style={{color: "#66FCF1"}}>Visa</span>}>
+                            <i class="fa-brands fa-cc-visa" ></i>
+                        </Tippy>
 
-                        <i 
-                            class="fa-brands fa-cc-mastercard"
-                            data-tooltip-id="mastercard" 
-                            data-tooltip-content="Mastercard"
-                        ></i>
-                        <Tooltip id="mastercard" style={{color: "#66FCF1"}}/>
+                        <Tippy content={<span style={{color: "#66FCF1"}}>Mastercard</span>}>
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                        </Tippy>
 
-                        <i 
-                            class="fa-brands fa-cc-paypal"
-                            data-tooltip-id="paypal" 
-                            data-tooltip-content="Paypal"
-                        ></i>
-                        <Tooltip id="paypal" style={{color: "#66FCF1"}}/>
+                        <Tippy content={<span style={{color: "#66FCF1"}}>PayPal</span>}>
+                            <i class="fa-brands fa-cc-paypal"></i>
+                        </Tippy>
 
-                        <i 
-                            class="fa-brands fa-cc-stripe"
-                            data-tooltip-id="stripe" 
-                            data-tooltip-content="Stripe"
-                        ></i>
-                        <Tooltip id="stripe" style={{color: "#66FCF1"}}/>
+                        <Tippy content={<span style={{color: "#66FCF1"}}>Stripe</span>}>
+                            <i class="fa-brands fa-cc-stripe"></i>
+                        </Tippy>
                     </div>
                 </div>
         </div>
