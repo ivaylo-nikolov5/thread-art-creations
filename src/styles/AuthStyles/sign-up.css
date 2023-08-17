@@ -1,4 +1,8 @@
-.sign-up-container {
-    color: #fff;
-    margin-top: 120px;
+.sign-up-form-title {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 120px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #66FCF1;
+    width: 320px;
 }

@@ -13,7 +13,7 @@ function Home() {
 
     return (
         <div>
-            <Header user={user}/>
+            <Header/>
 
             <HomeImageSlider /> 
 
@@ -21,7 +21,7 @@ function Home() {
 
             <Categories />
 
-            {!user && <SignUpDiv />}
+            <SignUpDiv />
 
             <CompanyInfo />
 

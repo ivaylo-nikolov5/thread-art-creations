@@ -74,3 +74,15 @@
               0 0 20px rgba(102, 252, 241, 0.6),
               0 0 40px rgba(102, 252, 241, 0.4);
 }
+
+.sign-up-redirect-link {
+    color: #66FCF1;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.sign-up-redirect-link:hover {
+    text-decoration: underline;
+}
