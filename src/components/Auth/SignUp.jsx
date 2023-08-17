@@ -45,6 +45,32 @@ const SignUp = (props) => {
                     />
                 </div>
 
+                <div className='password-container'>
+                    <h2 className='inp-field-label'>Repeat password:</h2>
+                    <input 
+                        className='password-inp'
+                        type="password"
+                        placeholder='Repeat your password'
+                        // value={password}
+                        // onChange={(event) => setPassword(event.target.value)}
+                    />
+                </div>
+
+                <div className='checkbox-container'>
+                    <input type="checkbox" name='general-terms'/>
+                    <label htmlFor="general-terms">
+                        Accept the  
+                        <a href="/" className='general-terms-link'>
+                            General terms
+                        </a>?</label>
+                </div>
+
+                <div className='checkbox-container'>
+                    <input type="checkbox" name='newsletter'/>
+                    <label htmlFor="newsletter">Subscribe to newsletter?</label>
+                </div>
+
+
                 <button type='submit' className='log-in-btn'>Sign Up</button>
                 <a href="/login" className='sign-up-redirect-link'>Already have an account?</a>
             </form>

@@ -6,3 +6,48 @@
     border-bottom: 1px solid #66FCF1;
     width: 320px;
 }
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 335px;
+    margin-bottom: 10px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #66FCF1;
+    background-color: #0B0C10;
+    color: #66FCF1;
+    border-radius: 2px;
+    margin-right: 11px;
+    cursor: pointer;
+}
+
+.checkbox-container input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    /* top: 50%; */
+    /* left: 50%; */
+    width: 10px;
+    height: 10px;
+    border: 2px solid transparent;
+    border-top: none;
+    border-right: none;
+    transform: rotate(315deg);
+    opacity: 0; /* Initially hidden */
+    color: #66FCF1;
+}
+
+.checkbox-container input[type="checkbox"]:checked::before {
+    border-color: #66FCF1; /* Custom checkmark color when checked */
+    opacity: 1; /* Show the checkmark when checked */
+}
+
+.general-terms-link {
+    color: #66FCF1;
+    margin-left: 5px;
+}
