@@ -33,6 +33,7 @@
     justify-content: space-around;
     align-items: center;
     width: 250px;
+    cursor: pointer;
 }
 
 .fa-cc-visa,

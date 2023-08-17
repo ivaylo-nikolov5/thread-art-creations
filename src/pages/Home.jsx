@@ -10,9 +10,10 @@ import CompanyInfo from "../components/HomePage/CompanyInfo";
 import Footer from "../components/HomePage/Footer";
 
 function Home() {
+
     return (
         <div>
-            <Header />
+            <Header user={user}/>
 
             <HomeImageSlider /> 
 
@@ -20,7 +21,7 @@ function Home() {
 
             <Categories />
 
-            <SignUpDiv />
+            {!user && <SignUpDiv />}
 
             <CompanyInfo />
 

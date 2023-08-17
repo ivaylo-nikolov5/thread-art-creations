@@ -50,11 +50,14 @@
 .fa-arrow-left {
     scale: 2.5;
     color: #45A29E;
+    margin-top: 10px;
 }
 
 .fa-arrow-right {
     scale: 4;
     color: #45A29E;
+    margin-right: 15px;
+    margin-top: 10px;
 }
 
 .outerDot {

@@ -1,0 +1,10 @@
+Project name
+thead-art-creations
+Project ID 
+thead-art-creations
+Project number 
+803109609069
+Default GCP resource location 
+Not yet selected
+Web API Key
+AIzaSyA24QrgnqNUkDCl0ScC4pruyLre6lgU2sM

@@ -1,0 +1,76 @@
+.sign-in-container {
+    display: flex;
+    width: 100%;
+    color: #fff;
+    margin-top: 120px;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-in-form {
+    border-radius: 20px;
+    width: 20vw;
+    border: 2px solid #66FCF1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    box-shadow: 0 0 5px rgba(102, 252, 241, 0.8),
+              0 0 20px rgba(102, 252, 241, 0.6),
+              0 0 40px rgba(102, 252, 241, 0.4);
+}
+
+.log-in-form-title {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 120px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #66FCF1;
+    width: 150px;
+}
+
+.email-inp,
+.password-inp {
+    width:320px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid #66FCF1;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 1.2rem;
+    color: #66FCF1;
+}
+
+.email-inp:focus,
+.password-inp:focus {
+    outline: none;
+}
+
+.inp-field-label {
+    margin-bottom: 0;
+}
+
+.log-in-btn {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    width: 150px;
+    height: 45px;
+    background-color: #66FCF1;
+    border: 0;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all ease-in-out 0.25s;
+}
+
+.log-in-btn:hover {
+    background-color: #0B0C10;
+    border: 2px solid #66FCF1;
+    color: #fff;
+    box-shadow: 0 0 15px rgba(102, 252, 241, 0.8),
+              0 0 20px rgba(102, 252, 241, 0.6),
+              0 0 40px rgba(102, 252, 241, 0.4);
+}

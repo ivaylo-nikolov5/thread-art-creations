@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../styles/header.css"
 import logo from "../../assets/images/logo.png";
 import HeaderOptionsList from "../small_components/HeaderOptionsList";
+import { auth } from "../../firebase";
 
 function Header() {
+
     return (
         <div className="header-main-container">
             {/* <img src={logo} /> */}
             <div className="header-logo-title-container">
-                <h1 className="header-logo-title">Thread Art Creations</h1>
+                <a href="/">
+                    <h1 className="header-logo-title">Thread Art Creations</h1>
+                </a>
             </div>
 
             <div className="menu-pages-container">
@@ -16,7 +20,19 @@ function Header() {
             </div>
 
             <div className="auth-and-actions-container">
-                <button className="auth-btn">Login</button>
+                {
+                    !auth.currentUser ? 
+                    <a href="/login">
+                        <button className="auth-btn">Login</button>
+                    </a>
+                    :
+                    <a href="/">
+                        <button 
+                            className="auth-btn"
+                            onClick={auth.signOut()}
+                        >Log out</button>
+                    </a>
+                }
 
                 <button className="profile-btn">
                     <i class="fa-solid fa-user"></i>

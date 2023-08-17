@@ -3,12 +3,15 @@ import React from "react";
 function HeaderOptionsList() {
     return (
         <ul className="menu-pages-list">
-                    <li className="menu-list-page">
-                        <span>H</span>
-                        <span>o</span>
-                        <span>m</span>
-                        <span>e</span>
+                    <a href="/">
+                        <li className="menu-list-page">
+                            <span>H</span>
+                            <span>o</span>
+                            <span>m</span>
+                            <span>e</span>
                         </li>
+                    </a>
+
                     <li className="menu-list-page">
                         <span>A</span>
                         <span>b</span>
@@ -16,6 +19,7 @@ function HeaderOptionsList() {
                         <span>u</span>
                         <span>t</span>
                         </li>
+
                     <li className="menu-list-page">
                         <span>P</span>
                         <span>r</span>
@@ -24,13 +28,15 @@ function HeaderOptionsList() {
                         <span>u</span>
                         <span>c</span>
                         <span>t</span>
-                        </li>
+                    </li>
+
                     <li className="menu-list-page">
                         <span>B</span>
                         <span>l</span>
                         <span>o</span>
                         <span>g</span>
-                        </li>
+                    </li>
+
                     <li className="menu-list-page">
                         <span>C</span>
                         <span>o</span>
@@ -39,7 +45,7 @@ function HeaderOptionsList() {
                         <span>a</span>
                         <span>c</span>
                         <span>t</span>
-                        </li>
+                    </li>
                 </ul>
     );
 };
