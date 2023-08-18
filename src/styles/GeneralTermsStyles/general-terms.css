@@ -1,0 +1,26 @@
+.terms-container {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin-left: 50px;
+    margin-top: 150px;
+    margin-bottom: 120px;
+}
+
+.general-terms-title {
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+
+.terms-part-container {
+    max-width: 1200px;
+}
+
+.terms-part-title {
+    font-size: 1.9rem;
+    text-decoration: underline;
+}
+
+.terms-part-text {
+    font-size: 1.3rem;
+}

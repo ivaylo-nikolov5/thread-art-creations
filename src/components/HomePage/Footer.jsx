@@ -8,7 +8,7 @@ function Footer() {
         <div className="footer-container">
                 <div className="info-links">
                     <ul className="links-list">
-                        <li className="info-link">General terms</li>
+                        <li><a href="/general-terms" className="info-link">General terms</a></li>
                         <li className="info-link">Privacy policy - GDPR</li>
                         <li className="info-link">FAQ</li>
                         <li className="info-link">About us</li>

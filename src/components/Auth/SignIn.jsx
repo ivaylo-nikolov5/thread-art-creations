@@ -5,6 +5,8 @@ import "../../styles/AuthStyles/sign-in.css"
 import Header from '../HomePage/Header';
 import { auth } from "../../firebase"
 import { signInWithEmailAndPassword } from 'firebase/auth';
+import Footer from '../HomePage/Footer';
+import CompanyInfo from '../HomePage/CompanyInfo';
 
 
 const SignIn = () => {
@@ -53,6 +55,11 @@ const SignIn = () => {
                 <button type='submit' className='log-in-btn'>Log In</button>
                 <a href="/register" className='sign-up-redirect-link'>Don't have an account?</a>
             </form>
+
+            <div className='footer-container'>
+                < CompanyInfo />
+                <Footer />
+            </div>
 
         </div>
     );
