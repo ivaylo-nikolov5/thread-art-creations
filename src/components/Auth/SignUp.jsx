@@ -4,6 +4,8 @@ import "../../styles/AuthStyles/sign-up.css"
 import "../../styles/AuthStyles/sign-in.css"
 import Header from '../HomePage/Header';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
+import CompanyInfo from '../HomePage/CompanyInfo';
+import Footer from '../HomePage/Footer';
 
 
 const SignUp = (props) => {
@@ -60,7 +62,7 @@ const SignUp = (props) => {
                     <input type="checkbox" name='general-terms'/>
                     <label htmlFor="general-terms">
                         Accept the  
-                        <a href="/" className='general-terms-link'>
+                        <a href="/general-terms" className='general-terms-link'>
                             General terms
                         </a>?</label>
                 </div>
@@ -74,6 +76,11 @@ const SignUp = (props) => {
                 <button type='submit' className='log-in-btn'>Sign Up</button>
                 <a href="/login" className='sign-up-redirect-link'>Already have an account?</a>
             </form>
+
+            <div className='footer-container'>
+                <CompanyInfo />
+                <Footer />
+            </div>
         </div>
     );
 };
