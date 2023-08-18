@@ -20,15 +20,18 @@ function HeaderOptionsList() {
                         <span>t</span>
                         </li>
 
-                    <li className="menu-list-page">
-                        <span>P</span>
-                        <span>r</span>
-                        <span>o</span>
-                        <span>d</span>
-                        <span>u</span>
-                        <span>c</span>
-                        <span>t</span>
-                    </li>
+                    <a href="/products">
+                        <li className="menu-list-page">
+                            <span>P</span>
+                            <span>r</span>
+                            <span>o</span>
+                            <span>d</span>
+                            <span>u</span>
+                            <span>c</span>
+                            <span>t</span>
+                            <span>s</span>
+                        </li>
+                    </a>
 
                     <li className="menu-list-page">
                         <span>B</span>

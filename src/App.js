@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import SignIn from './components/Auth/SignIn';
 import SignUp from './components/Auth/SignUp';
 import GeneralTerms from './pages/GeneralTerms';
+import Products from './pages/Products';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
                 <Routes>
                     <Route index element={<Home />} />
                     <Route path="/home" element={<Home />} />
+                    <Route path="/products" element={<Products />} />
 
                     {/* Auth */}
                     <Route path="/login" element={<SignIn />} />

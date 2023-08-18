@@ -1,0 +1,74 @@
+.quote-div-container {
+    margin-top: 190px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #C5C6C7;
+    box-shadow: 0 15px 20px -10px #c5c6c7, 
+              0 -15px 20px -10px #c5c6c7;
+}
+
+.quote-div-inner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 1400px;
+}
+
+.quote-div-text-container {
+    max-width: fit-content;
+}
+
+.quote-div-text-title {
+    margin-bottom: -20px;
+    font-size: 2.5rem;
+    color: #0B0C10;
+}
+
+.upper-quotes {
+    font-size: 5rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.quote-div-text-p {
+    font-size: 1.4rem;
+    width: 100%;
+    text-align: center;
+}
+
+.try-now-btn-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.try-now-btn {
+    background-color: #0B0C10;
+    border: 0;
+    border-radius: 10px;
+    width: 170px;
+    height: 50px;
+    color: #C5C6C7;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all ease-in-out 0.25s;
+}
+
+.try-now-btn:hover {
+    color: #0B0C10;
+    background-color: #C5C6C7;
+    border: 1px solid #0B0C10;
+    box-shadow: 0 5px 25px -5px #0B0C10;
+}
+
+
+
+
+/* #0B0C10 */
+/* #1F2833 */
+/* #C5C6C7 */
+/* #66FCF1 */
+/* #45A29E */
