@@ -1,0 +1,21 @@
+.product-category-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-category-img-container {
+    background-color: #C5C6C7;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.category-label {
+    transition: all ease-in-out 0.25s;
+    cursor: pointer;
+}
+
+.product-category-container:hover .category-label {
+    color: #66FCF1;
+}

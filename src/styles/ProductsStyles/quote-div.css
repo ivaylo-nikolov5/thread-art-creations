@@ -1,5 +1,6 @@
 .quote-div-container {
-    margin-top: 190px;
+    width: 100%;
+    margin-top: 150px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
