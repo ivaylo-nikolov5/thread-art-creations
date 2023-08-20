@@ -1,8 +1,8 @@
 const categoriesLabels = [
-    "Men",
-    "Women",
-    "Kids",
-    "Accessories",
+    {categoryName: "Men", categoryUrl: "products/men"},
+    {categoryName: "Women", categoryUrl: "products/women"},
+    {categoryName: "Kids", categoryUrl: "products/kids"},
+    {categoryName: "Accessories", categoryUrl: "products/accessories"},
     
 ];
 

@@ -12,7 +12,11 @@ import Footer from '../components/HomePage/Footer';
 
 const Products = () => {
     const categories = images.map((img, idx) => {
-        return <ProductCategory key={idx} img={img} label={categoriesLabels[idx]}/>
+        return <ProductCategory 
+                    key={idx}  
+                    img={img} 
+                    label={categoriesLabels[idx].categoryName}
+                    url={categoriesLabels[idx].categoryUrl}/>
     })
 
 
