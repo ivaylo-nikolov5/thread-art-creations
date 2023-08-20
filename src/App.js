@@ -7,6 +7,8 @@ import SignIn from './components/Auth/SignIn';
 import SignUp from './components/Auth/SignUp';
 import GeneralTerms from './pages/GeneralTerms';
 import Products from './pages/Products';
+import CategoryProducts from './components/Products/CategoryProducts';
+import NotFound from './components/small_components/NotFound';
 
 function App() {
 
@@ -17,6 +19,7 @@ function App() {
                     <Route index element={<Home />} />
                     <Route path="/home" element={<Home />} />
                     <Route path="/products" element={<Products />} />
+                    <Route path="/products/:categoryName" element={<CategoryProducts />} />
 
                     {/* Auth */}
                     <Route path="/login" element={<SignIn />} />
@@ -24,6 +27,9 @@ function App() {
 
                     {/* Info */}
                     <Route path="/general-terms" element={<GeneralTerms />} />
+                    {/* Not found */}
+                    <Route path='*' element={<NotFound />} />
+                    <Route path='/not-found' element={<NotFound />} />
                 </Routes>
             </BrowserRouter>
         </div>
