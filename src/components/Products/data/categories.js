@@ -1,8 +1,17 @@
 const categories = {
-    men: {},
-    women: {},
-    kids: {},
-    accessories: {},
+    men: {
+        clothesNames: [],
+        clothesImages: []
+    },
+    women: {
+       
+    },
+    kids: {
+
+    },
+    accessories: {
+
+    },
 }
 
 export default categories;

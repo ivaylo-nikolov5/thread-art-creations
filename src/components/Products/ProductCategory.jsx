@@ -2,6 +2,7 @@ import React from 'react';
 import "../../styles/ProductsStyles/products-category.css";
 
 const ProductCategory = (props) => {
+    
     return (
         <a href={props.url}>
             <div className='product-category-container'>
