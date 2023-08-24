@@ -1,4 +1,5 @@
 .category-products-container {
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,7 +19,7 @@
     color: #66FCF1;
     padding-bottom: 10px;
     text-align: center;
-    width: 90%;
+    width: 100%;
     border-bottom: 1px solid #66FCF1;
 }
 
@@ -26,7 +27,7 @@
     display: flex;
     color: #66FCF1;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
 }
 
 .view-selection-container {
@@ -47,6 +48,59 @@
 .fa-grip:hover,
 .fa-list:hover {
     color: #45A29E;
+}
+
+.sorting-options-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sort-option-container,
+.products-show-quantity-container {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.option-label {
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+
+.sort-criteria-list,
+.products-show-quantity {
+    height: 29px;
+    border-radius: 5px;
+    background-color: #45A29E;
+    border-color: #66FCF1;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.sort-criteria-list:focus,
+.products-show-quantity:focus {
+    outline: none;
+}
+
+.sort-criteria-list option:hover,
+.products-show-quantity option:hover {
+    background-color: #45A29E;
+}
+
+.sort-option-container {
+    margin-right: 20px;
+}
+
+.products-container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Use auto-fill for flexible rows */
+    gap: 25px; /* Adjust gap between cards */
+    justify-items: center; /* Center cards horizontally */
+    align-items:flex-start;
+    width: 100%; /* Adjust container width */
+    margin-top: 50px; /* Add some spacing */
 }
 
 /* #0B0C10 */

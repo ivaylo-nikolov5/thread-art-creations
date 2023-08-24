@@ -4,6 +4,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import Header from '../HomePage/Header';
 import "../../styles/ProductsStyles/category-products.css";
 import SortCriteria from './data/SortCriteria';
+import ProductCard from './ProductCard';
 
 
 const CategoryProducts = () => {
@@ -57,6 +58,15 @@ const CategoryProducts = () => {
 
     const formattedCategory = category.charAt(0).toUpperCase() + category.slice(1);
 
+    const productItems = products.map((data) => {
+        return <ProductCard 
+                    img={data.productImage} 
+                    brand={data.brandName} 
+                    name={data.productName}
+                    category={category}
+                />
+    })
+
     return (
         <div className='category-products-container'>
             <Header />
@@ -72,14 +82,14 @@ const CategoryProducts = () => {
                     <i class="fa-solid fa-list"></i>
                 </div>
 
-                <div>
+                <div className='sorting-options-container'>
                     <div className='sort-option-container'>
-                        <p>Sort by:</p>
+                        <p className='option-label'>Sort by:</p>
                         <SortCriteria />
                     </div>
 
                     <div className='products-show-quantity-container'>
-                        <p>Show: </p>
+                        <p className='option-label'>Show: </p>
                         <select name="" id="" className='products-show-quantity'>
                             <option className='quantity-option'>12</option>
                             <option className='quantity-option'>24</option>
@@ -87,6 +97,10 @@ const CategoryProducts = () => {
                         </select>
                     </div>
                 </div>
+            </div>
+
+            <div className='products-container'>
+                {productItems}
             </div>
         </div>
     );
