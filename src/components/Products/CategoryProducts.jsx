@@ -63,6 +63,8 @@ const CategoryProducts = () => {
                     img={data.productImage} 
                     brand={data.brandName} 
                     name={data.productName}
+                    price={data.price}
+                    description={data.productDescription}
                     category={category}
                 />
     })

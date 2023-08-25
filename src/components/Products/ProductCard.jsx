@@ -9,6 +9,7 @@ const ProductCard = (props) => {
             </div>
             <p className='brand-name'>{props.brand}</p>
             <h2 className='product-name'>{props.name.length <= 27 ? props.name : props.name.slice(0, 26) + "..."}</h2>
+            <p className='price-label'>{props.price}lv.</p>
         </div>
     )
 }

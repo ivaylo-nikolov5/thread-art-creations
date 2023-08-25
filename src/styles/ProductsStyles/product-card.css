@@ -42,7 +42,16 @@
     text-align: center;
     padding-top: 15px;
     padding-bottom: 20px;
+}
+
+.price-label {
+    background-color: #45A29E;
+    margin: 0;
+    width: 100%;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
