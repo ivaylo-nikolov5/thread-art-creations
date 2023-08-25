@@ -13,7 +13,7 @@ import NotFound from './components/small_components/NotFound';
 function App() {
 
     return (
-        <div style={{display: 'flex', flexDirection: "column", justifyContent: "center", alignItems: "center", width: "100%"}}>
+        <div className='main-container'>
             <BrowserRouter>
                 <Routes>
                     <Route index element={<Home />} />

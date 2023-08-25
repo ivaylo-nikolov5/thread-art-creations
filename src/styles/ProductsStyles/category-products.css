@@ -1,5 +1,5 @@
 .category-products-container {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,7 +7,7 @@
 }
 
 .category-products-title-container {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -27,7 +27,7 @@
     display: flex;
     color: #66FCF1;
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
 }
 
 .view-selection-container {
@@ -99,7 +99,6 @@
     gap: 25px; /* Adjust gap between cards */
     justify-items: center; /* Center cards horizontally */
     align-items:flex-start;
-    width: 100%; /* Adjust container width */
     margin-top: 50px; /* Add some spacing */
 }
 

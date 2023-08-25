@@ -7,6 +7,10 @@ body {
     margin-top: 89px;
 }
 
+.main-container {
+    justify-content: center;
+    align-items: center;   
+}
 .sectionEnd {
     width: 100vw;
     color: white;
