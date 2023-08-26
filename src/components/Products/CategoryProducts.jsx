@@ -5,6 +5,7 @@ import Header from '../HomePage/Header';
 import "../../styles/ProductsStyles/category-products.css";
 import SortCriteria from './data/SortCriteria';
 import ProductCard from './ProductCard';
+import ColumnProductCard from './ColumnProductCard';
 
 
 const CategoryProducts = () => {
@@ -13,6 +14,7 @@ const CategoryProducts = () => {
     const navigate = useNavigate();
     const [categories, setCategories] = useState([]);
     const [products, setProducts] = useState([]);
+    const [view, setView] = useState("grid");
 
     useEffect(() => {
         async function fetchCategories() {
@@ -59,14 +61,24 @@ const CategoryProducts = () => {
     const formattedCategory = category.charAt(0).toUpperCase() + category.slice(1);
 
     const productItems = products.map((data) => {
-        return <ProductCard 
-                    img={data.productImage} 
-                    brand={data.brandName} 
-                    name={data.productName}
-                    price={data.price}
-                    description={data.productDescription}
-                    category={category}
-                />
+        return view === "grid" ? 
+        <ProductCard 
+            img={data.productImage} 
+            brand={data.brandName} 
+            name={data.productName}
+            price={data.price}
+            description={data.productDescription}
+            category={category}
+        />
+        :
+        <ColumnProductCard 
+            img={data.productImage} 
+            brand={data.brandName} 
+            name={data.productName}
+            price={data.price}
+            description={data.productDescription}
+            category={category}
+        />
     })
 
     return (
@@ -80,8 +92,8 @@ const CategoryProducts = () => {
 
             <div className='products-actions-container'>
                 <div className='view-selection-container'>
-                    <i class="fa-solid fa-grip"></i>
-                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-grip" onClick={ () => setView("grid") }></i>
+                    <i class="fa-solid fa-list" onClick={ () => setView("column") }></i>
                 </div>
 
                 <div className='sorting-options-container'>
@@ -101,9 +113,15 @@ const CategoryProducts = () => {
                 </div>
             </div>
 
-            <div className='products-container'>
-                {productItems}
-            </div>
+            {view === "grid" ? 
+                <div className='products-container'>
+                    {productItems}
+                </div>
+                :
+                <div className='column-products-container'>
+                    {productItems}
+                </div>
+            }
         </div>
     );
 }

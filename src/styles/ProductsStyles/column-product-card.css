@@ -1,0 +1,134 @@
+.column-product-card-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 15px;
+}
+
+.col-product-image {
+    width: 320px;
+    height: 320px;
+    background-color: #C5C6C7;
+    cursor: pointer;
+}
+
+.col-product-card-image {
+    width: 100%;
+    height: 100%;
+}
+
+.col-product-data-container {
+    background-color: #1F2833;
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+}
+
+.manifacturer-container {
+    color: #fff;
+    background-color: #1F2833;
+    padding-left: 20px;
+}
+
+.manifacturer {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.manifacturer a {
+    margin-left: 5px;
+    color: #66FCF1;
+    text-decoration: none;
+    transition: all ease-in-out 0.1s;
+}
+
+.manifacturer a:hover {
+    color: #45A29E;
+}
+
+.col-product-name {
+    margin-left: 20px;
+    color: #66FCF1;
+    transition: all ease-in-out 0.1s;
+}
+
+.col-product-name:hover {
+    color: #45A29E;
+}
+
+.product-link {
+    text-decoration: none;
+}
+
+.product-description {
+    margin-left: 20px;
+    color: #fff;
+    font-size: 1.3rem;
+    max-width: 95%;
+}
+
+.product-price {
+    color: #fff;
+    font-size: 2rem;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.product-actions-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.buy-btn {
+    background-color: #0B0C10;
+    color: #66FCF1;
+    border: 0;
+    border-radius: 2px;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 10px;
+    cursor: pointer;
+    transition: all ease-in-out 0.15s;
+}
+
+.fa-cart-shopping {
+    font-size: 1.3rem;
+    margin-right: 10px;
+    transition: all ease-in-out 0.15s;
+}
+
+.buy-btn:hover {
+    color: #45A29E;
+}
+
+.buy-btn:hover .fa-cart-shopping {
+    color: #45A29E;
+}
+
+.favorite-btn {
+    background-color: #C5C6C7;
+    border: 0;
+    border-radius: 2px;
+    padding: 7px 10px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: all ease-in-out 0.15s;
+}
+
+.fa-heart {
+    font-size: 1.3rem;
+}
+
+.favorite-btn:hover {
+    background-color: #f00;
+}
+
+/* #0B0C10 */
+/* #1F2833 */
+/* #C5C6C7 */
+/* #66FCF1 */
+/* #45A29E */

@@ -20,7 +20,7 @@
 
 .product-card-image {
     max-width: 100%; /* Adjust image size */
-    max-height: 350px; /* Limit image height */
+    height: 350px; /* Limit image height */
 }
 
 .brand-name {
