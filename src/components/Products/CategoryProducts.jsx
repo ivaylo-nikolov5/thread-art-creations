@@ -6,6 +6,8 @@ import "../../styles/ProductsStyles/category-products.css";
 import SortCriteria from './data/SortCriteria';
 import ProductCard from './ProductCard';
 import ColumnProductCard from './ColumnProductCard';
+import CompanyInfo from "../HomePage/CompanyInfo";
+import Footer from "../HomePage/Footer";
 
 
 const CategoryProducts = () => {
@@ -122,6 +124,11 @@ const CategoryProducts = () => {
                     {productItems}
                 </div>
             }
+
+            <div className='footer-container'>
+                < CompanyInfo />
+                <Footer />
+            </div>
         </div>
     );
 }

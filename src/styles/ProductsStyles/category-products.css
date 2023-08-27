@@ -109,6 +109,12 @@
     margin-top: 50px; /* Add some spacing */
 }
 
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 /* #0B0C10 */
 /* #1F2833 */
 /* #C5C6C7 */
