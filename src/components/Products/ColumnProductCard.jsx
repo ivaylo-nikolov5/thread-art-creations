@@ -10,7 +10,11 @@ const ColumnProductCard = (props) => {
 
             <div className='col-product-data-container'>
                 <div className='manifacturer-container'>
-                    <p className='manifacturer'>Manifacturer: <a href="">{props.brand}</a></p>
+                    {props.brand.trim() !== "" ? 
+                        <p className='manifacturer'>Manifacturer: <a href="">{props.brand}</a></p>
+                        : 
+                        <div></div>
+                    }
                 </div>
 
                 <div className='product-info'>
