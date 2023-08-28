@@ -7,7 +7,7 @@ function CategoriesChoice() {
 
     return (
         <div className="categories-slider">
-            <div>
+            <a href="/products/men">
                 <div className="category-container">
                     <img src={images[0]} className="category-img" alt="" />
                     <div className="category-label-container">
@@ -21,9 +21,9 @@ function CategoriesChoice() {
                     <i class="fa-solid fa-arrow-right"></i>
                 </div>
 
-            </div>
+            </a>
 
-            <div>
+            <a href="/products/women">
                 <div className="category-container">
                     <img src={images[1]} className="category-img" alt="" />
                     <div className="category-label-container">
@@ -36,9 +36,9 @@ function CategoriesChoice() {
                     <p className="items-link">See the items</p>
                     <i class="fa-solid fa-arrow-right"></i>
                 </div>
-            </div>
+            </a>
 
-            <div>
+            <a href="/products/kids">
                 <div className="category-container">
                     <img src={images[2]} className="category-img" alt="" />
                     <div className="category-label-container">
@@ -51,9 +51,9 @@ function CategoriesChoice() {
                     <p className="items-link">See the items</p>
                     <i class="fa-solid fa-arrow-right"></i>
                 </div>
-            </div>
+            </a>
 
-            <div>
+            <a href="/products/accessories">
                 <div className="category-container">
                     <img src={images[3]} className="category-img" alt="" />
                     <div className="category-label-container">
@@ -67,7 +67,7 @@ function CategoriesChoice() {
                     <i class="fa-solid fa-arrow-right"></i>
                 </div>
 
-            </div>
+            </a>
         </div>
     );
 }
