@@ -4,10 +4,11 @@ import ColumnProductCard from '../ColumnProductCard'
 
 const CardComponents = (products, category, view) => {
   return (
-    products.map((data, idx) => {
+    products.map((data) => {
         return view === "grid" ? 
         <ProductCard 
-            key={idx}
+            key={data.id}
+            id={data.id}
             img={data.productImage} 
             brand={data.brandName} 
             name={data.productName}
@@ -17,7 +18,8 @@ const CardComponents = (products, category, view) => {
         />
         :
         <ColumnProductCard 
-            key={idx}
+            key={data.id}
+            id={data.id}
             img={data.productImage} 
             brand={data.brandName} 
             name={data.productName}

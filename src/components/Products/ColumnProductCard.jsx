@@ -5,7 +5,10 @@ const ColumnProductCard = (props) => {
     return (
         <div className='column-product-card-container'>
             <div className='col-product-image'>
-                <img src={require(`../../assets/images/products-images/categories/${props.category}/${props.img}`)} alt="" className='col-product-card-image' />
+                <a href={`http://localhost:3000/products/${props.category}/${props.id}`}>
+                    <img src={require(`../../assets/images/products-images/categories/${props.category}/${props.img}`)} alt="" className='col-product-card-image' />
+                </a>
+                
             </div>
 
             <div className='col-product-data-container'>
@@ -18,7 +21,7 @@ const ColumnProductCard = (props) => {
                 </div>
 
                 <div className='product-info'>
-                    <a href="" className='product-link'><h1 className='col-product-name'>{props.name}</h1></a>
+                    <a href={`http://localhost:3000/products/${props.category}/${props.id}`} className='product-link'><h1 className='col-product-name'>{props.name}</h1></a>
                     <p className='product-description'>
                         {props.description.length <= 258 ? props.description : props.description.slice(0, 259) + "..."}
                     </p>
