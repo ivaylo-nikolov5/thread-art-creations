@@ -8,6 +8,8 @@ import ProductCard from './ProductCard';
 import ColumnProductCard from './ColumnProductCard';
 import CompanyInfo from "../HomePage/CompanyInfo";
 import Footer from "../HomePage/Footer";
+import CardComponents from './data/CardComponents';
+import sortProducts from './data/sortProducts';
 
 
 const CategoryProducts = () => {
@@ -16,7 +18,10 @@ const CategoryProducts = () => {
     const navigate = useNavigate();
     const [categories, setCategories] = useState([]);
     const [products, setProducts] = useState([]);
+    const [defProducts, setDefProducts] = useState([])
     const [view, setView] = useState("grid");
+    const [sort, setSort] = useState("default");
+
 
     useEffect(() => {
         async function fetchCategories() {
@@ -51,6 +56,7 @@ const CategoryProducts = () => {
                 const data = await response.json();
                 console.log(data);
                 setProducts(data); // Save fetched data to state
+                setDefProducts(data)
             } catch (error) {
                 console.error("Error fetching products:", error);
             }
@@ -59,30 +65,18 @@ const CategoryProducts = () => {
         fetchProducts();
     }, []);
 
+    useEffect(() => {
+        setProducts(sortProducts(products, sort, defProducts))
+    }, [sort])
+
+    const handleSortChange = (selectedSort) => {
+        setSort(selectedSort);
+    };
+
 
     const formattedCategory = category.charAt(0).toUpperCase() + category.slice(1);
 
-    const productItems = products.map((data) => {
-        return view === "grid" ? 
-        <ProductCard 
-            img={data.productImage} 
-            brand={data.brandName} 
-            name={data.productName}
-            price={data.price}
-            description={data.productDescription}
-            category={category}
-        />
-        :
-        <ColumnProductCard 
-            img={data.productImage} 
-            brand={data.brandName} 
-            name={data.productName}
-            price={data.price}
-            description={data.productDescription}
-            category={category}
-        />
-    })
-
+    const productItems = CardComponents(products, category, view)
     return (
         <div className='category-products-container'>
             <Header />
@@ -101,7 +95,7 @@ const CategoryProducts = () => {
                 <div className='sorting-options-container'>
                     <div className='sort-option-container'>
                         <p className='option-label'>Sort by:</p>
-                        <SortCriteria />
+                        <SortCriteria onSortChange={handleSortChange} />
                     </div>
 
                     <div className='products-show-quantity-container'>

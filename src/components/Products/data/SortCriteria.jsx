@@ -1,15 +1,22 @@
 import React from 'react'
 
-const SortCriteria = () => {
+const SortCriteria = ({ onSortChange }) => {
+
+  const handleSortSelect = (event) => {
+    const selectedSort = event.target.value;
+    console.log(selectedSort);
+    onSortChange(selectedSort);
+  };
+
   return (
-    <select className='sort-criteria-list'>
-        <option className='sort-criteria'>Default</option>
-        <option className='sort-criteria'>Name (A - Z)</option>
-        <option className='sort-criteria'>Name (Z - A)</option>
-        <option className='sort-criteria'>Price (Inc.)</option>
-        <option className='sort-criteria'>Price (Dec.)</option>
-        <option className='sort-criteria'>Rating (Inc.)</option>
-        <option className='sort-criteria'>Rating (Dec.)</option>
+    <select className='sort-criteria-list' onChange={handleSortSelect}>
+        <option value={"def"} className='sort-criteria'>Default</option>
+        <option value={"nameA"} className='sort-criteria'>Name (A - Z)</option>
+        <option value={"nameZ"} className='sort-criteria'>Name (Z - A)</option>
+        <option value={"priceI"} className='sort-criteria'>Price (Inc.)</option>
+        <option value={"priceD"} className='sort-criteria'>Price (Dec.)</option>
+        {/* <option value={"ratingI"} className='sort-criteria'>Rating (Inc.)</option>
+        <option value={"ratingD"} className='sort-criteria'>Rating (Dec.)</option> */}
     </select>
   )
 }

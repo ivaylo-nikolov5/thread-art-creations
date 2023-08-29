@@ -9,6 +9,7 @@ import GeneralTerms from './pages/GeneralTerms';
 import Products from './pages/Products';
 import CategoryProducts from './components/Products/CategoryProducts';
 import NotFound from './components/small_components/NotFound';
+import ProductPage from './components/Products/ProductPage';
 
 function App() {
 
@@ -18,8 +19,11 @@ function App() {
                 <Routes>
                     <Route index element={<Home />} />
                     <Route path="/home" element={<Home />} />
+
+                    {/* Products */}
                     <Route path="/products" element={<Products />} />
                     <Route path="/products/:categoryName" element={<CategoryProducts />} />
+                    <Route path="/products/:categoryName/:productId" element={<ProductPage />} />
 
                     {/* Auth */}
                     <Route path="/login" element={<SignIn />} />
