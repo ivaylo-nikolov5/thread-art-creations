@@ -16,6 +16,7 @@
     "react-swipe": "^6.0.4",
     "react-tooltip": "^5.20.0",
     "swipe-js-iso": "^2.1.5",
+    "thread-art-creations-server": "^1.0.0",
     "tippy.js": "^6.3.7",
     "web-vitals": "^2.1.4"
   },
@@ -42,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "module-alias": "^2.2.3"
   }
 }

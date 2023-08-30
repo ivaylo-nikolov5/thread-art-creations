@@ -11,6 +11,7 @@ import CategoryProducts from './components/Products/CategoryProducts';
 import NotFound from './components/small_components/NotFound';
 import ProductPage from './components/Products/ProductPage';
 
+
 function App() {
 
     return (
