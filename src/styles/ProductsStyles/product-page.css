@@ -3,11 +3,24 @@
     margin-right: auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 90%;
 }
 
 .path-container {
     margin-top: 30px;
+    align-self: flex-start;
+}
+
+.product-data-container {
+    width: 78%;
+
+}
+
+.product-images-slider {
+    margin-top: 5%;
+    margin-left: 5%;
 }
 
 /* #0B0C10 */

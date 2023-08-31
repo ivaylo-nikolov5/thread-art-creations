@@ -1,12 +1,13 @@
 import fetchProductData from "./fetchProductData";
 import capitalizeFirstLetter from "../../funcs/capitalizeFirstLetter";
 
-const fetchData = async (setProductData, setBreadcrumbItems, category, id) => {
+const fetchData = async (setProductData, setBreadcrumbItems, category, id, productData, ) => {
     try {
         let data = await fetchProductData(category, id);
         data = data[0];
 
         if (data) {
+            console.log(data.productImage)
             setProductData(data);
 
             const updatedBreadcrumbItems = [

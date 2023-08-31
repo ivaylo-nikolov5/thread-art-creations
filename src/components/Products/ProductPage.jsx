@@ -4,7 +4,7 @@ import getUrlData from './data/getUrlData';
 import fetchData from './data/fetchData';
 import "../../styles/ProductsStyles/product-page.css";
 import Path from '../small_components/Path';
-import ProductImages from '../small_components/ProductImages';
+import ProductImages from './data/ProductImages';
 
 
 const ProductPage = (props) => {
@@ -14,7 +14,8 @@ const ProductPage = (props) => {
     const [breadcrumbItems, setBreadcrumbItems] = useState([]);
 
     useEffect(() => {
-        fetchData(setProductData, setBreadcrumbItems, category, id);
+        fetchData(setProductData, setBreadcrumbItems, category, id, productData);
+        
     }, []);
 
     return (
@@ -24,9 +25,13 @@ const ProductPage = (props) => {
                 <Path items={breadcrumbItems}/>
             </div>
 
-            <div>
-                <ProductImages />
+            
+            <div className='product-data-container'>
+                <div className='product-images-slider'>
+                    <ProductImages category={category} image={productData.productImage}/>
+                </div>
             </div>
+            
         </div>
     );
 }
