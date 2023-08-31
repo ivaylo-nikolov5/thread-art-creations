@@ -10,6 +10,8 @@ import CompanyInfo from "../HomePage/CompanyInfo";
 import Footer from "../HomePage/Footer";
 import CardComponents from './data/CardComponents';
 import sortProducts from './data/sortProducts';
+import capitalizeFirstLetter from '../funcs/capitalizeFirstLetter';
+import Path from "../small_components/Path"
 
 
 const CategoryProducts = () => {
@@ -21,6 +23,12 @@ const CategoryProducts = () => {
     const [defProducts, setDefProducts] = useState([])
     const [view, setView] = useState("grid");
     const [sort, setSort] = useState("default");
+
+    const breadcrumbItems = [
+        { label: <i className="fa-solid fa-house"></i>, link: '/' },
+        { label: 'Products', link: '/products' },
+        { label: `${capitalizeFirstLetter(category)}`, link: `/products/${category}` },
+    ];
 
 
     useEffect(() => {
@@ -80,6 +88,11 @@ const CategoryProducts = () => {
     return (
         <div className='category-products-container'>
             <Header />
+
+            <div style={{width: "90%"}}>
+                <Path items={breadcrumbItems}/>
+            </div>
+
             <div className='category-products-title-container'>
                 <h1 className='category-products-title'>
                     {formattedCategory} products

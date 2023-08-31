@@ -1,0 +1,33 @@
+.path-container {
+    display: flex;
+    align-items: center;
+    color: #C5C6C7;
+    max-height: 30px;
+    
+}
+
+.path-link {
+    color: #66FCF1;
+    text-decoration: none;
+    transition: all ease-in-out 0.1s;
+}
+
+.slash {
+    font-size: 2rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.fa-house {
+    color: #66FCF1;
+    text-decoration: none;
+    transition: all ease-in-out 0.1s;
+}
+
+.path-link:hover {
+    color: #45A29E;
+}
+
+.fa-house:hover {
+    color: #45A29E;
+}
