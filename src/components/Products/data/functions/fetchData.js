@@ -1,5 +1,5 @@
 import fetchProductData from "./fetchProductData";
-import capitalizeFirstLetter from "../../funcs/capitalizeFirstLetter";
+import capitalizeFirstLetter from "../../../funcs/capitalizeFirstLetter";
 
 const fetchData = async (setProductData, setBreadcrumbItems, category, id, productData, ) => {
     try {

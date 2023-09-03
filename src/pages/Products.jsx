@@ -4,7 +4,7 @@ import Header from '../components/HomePage/Header';
 import "../styles/ProductsStyles/products.css";
 import QuoteDiv from '../components/Products/QuoteDiv';
 import images from '../components/funcs/categoriesImages';
-import categoriesLabels from "../components/Products/data/categoriesLabels";
+import categoriesLabels from "../components/Products/data/functions/categoriesLabels";
 
 import ProductCategory from '../components/Products/ProductCategory';
 import CompanyInfo from '../components/HomePage/CompanyInfo';

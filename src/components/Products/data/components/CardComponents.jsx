@@ -1,6 +1,6 @@
 import React from 'react'
-import ProductCard from '../ProductCard'
-import ColumnProductCard from '../ColumnProductCard'
+import ProductCard from '../../ProductCard'
+import ColumnProductCard from '../../ColumnProductCard'
 
 const CardComponents = (products, category, view) => {
   return (

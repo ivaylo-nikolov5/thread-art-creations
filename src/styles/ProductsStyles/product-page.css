@@ -14,13 +14,39 @@
 }
 
 .product-data-container {
+    display: flex;
     width: 78%;
+    color: #fff;
 
 }
 
 .product-images-slider {
     margin-top: 5%;
     margin-left: 5%;
+}
+
+.colors-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.color-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    background-color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.color-fill {
+    width: 45px;
+    height: 45px;
 }
 
 /* #0B0C10 */

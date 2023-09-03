@@ -3,13 +3,13 @@ import { useParams, useNavigate } from 'react-router-dom';
 
 import Header from '../HomePage/Header';
 import "../../styles/ProductsStyles/category-products.css";
-import SortCriteria from './data/SortCriteria';
+import SortCriteria from "./data/components/SortCriteria"
 import ProductCard from './ProductCard';
 import ColumnProductCard from './ColumnProductCard';
 import CompanyInfo from "../HomePage/CompanyInfo";
 import Footer from "../HomePage/Footer";
-import CardComponents from './data/CardComponents';
-import sortProducts from './data/sortProducts';
+import CardComponents from "./data/components/CardComponents"
+import sortProducts from './data/functions/sortProducts';
 import capitalizeFirstLetter from '../funcs/capitalizeFirstLetter';
 import Path from "../small_components/Path"
 
