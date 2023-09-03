@@ -8,6 +8,7 @@ import Path from '../small_components/Path';
 import ProductImages from './data/components/ProductImages';
 import ReviewsContainer from './data/components/ReviewsContainer';
 import ColorComponent from './data/components/ColorComponent';
+import parseColors from './data/functions/parseColors';
 
 
 const ProductPage = (props) => {
@@ -16,11 +17,24 @@ const ProductPage = (props) => {
     const [productData, setProductData] = useState({});
     const [breadcrumbItems, setBreadcrumbItems] = useState([]);
     const [selectedColor, setSelectedColor] = useState("");
+    const [availableColors, setavailableColors] = useState([]);
 
     useEffect(() => {
-        fetchData(setProductData, setBreadcrumbItems, category, id, productData);
-        
+            fetchData(setProductData, setBreadcrumbItems, category, id, productData);
     }, []);
+
+    useEffect(() => {
+        if (productData.colors) {
+            const result = parseColors(productData.colors)
+            setavailableColors(result.colors);
+            setSelectedColor(result.colors[0])
+            console.log(availableColors)
+            console.log(selectedColor)
+        }
+        
+          
+        
+    }, [productData])
 
     return (
         <div className='product-page-container'>
@@ -49,8 +63,8 @@ const ProductPage = (props) => {
                     </div>
 
                     <div className='colors-container'>
-                        < ColorComponent 
-                            colors={productData.colors} 
+                        <ColorComponent 
+                            colors={availableColors} 
                             selectedColor={selectedColor}
                             setSelectedColor={setSelectedColor}
                         /> 

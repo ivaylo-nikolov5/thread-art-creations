@@ -7,7 +7,6 @@ const fetchData = async (setProductData, setBreadcrumbItems, category, id, produ
         data = data[0];
 
         if (data) {
-            console.log(data.productImage)
             setProductData(data);
 
             const updatedBreadcrumbItems = [
