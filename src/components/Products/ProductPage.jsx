@@ -10,6 +10,7 @@ import ReviewsContainer from './data/components/ReviewsContainer';
 import ColorComponent from './data/components/ColorComponent';
 import parseJSON from './data/functions/parseJSON';
 import SizesComponent from './data/components/SizesComponent';
+import QuantityComponent from './data/components/QuantityComponent';
 
 
 const ProductPage = (props) => {
@@ -21,6 +22,7 @@ const ProductPage = (props) => {
     const [availableColors, setavailableColors] = useState([]);
     const [availableSizes, setAvailableSizes] = useState([]);
     const [selectedSize, setSelectedSize] = useState([""])
+    const [selectedQuantity, setSelectedQuantity] = useState(1);
 
     useEffect(() => {
             fetchData(setProductData, setBreadcrumbItems, category, id, productData);
@@ -75,6 +77,15 @@ const ProductPage = (props) => {
                             sizes={availableSizes}
                             selectedSize={selectedSize}
                             setSelectedSize={setSelectedSize}
+                        />
+                    </div>
+
+                    <div className='quantity-outer-container'>
+                        <p>Quantity</p>
+                        <QuantityComponent 
+                            availableQuantity={productData.productsCount}
+                            selectedQuantity={selectedQuantity}
+                            setSelectedQuantity={setSelectedQuantity}
                         />
                     </div>
 
