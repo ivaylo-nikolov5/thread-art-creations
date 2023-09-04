@@ -8,7 +8,8 @@ import Path from '../small_components/Path';
 import ProductImages from './data/components/ProductImages';
 import ReviewsContainer from './data/components/ReviewsContainer';
 import ColorComponent from './data/components/ColorComponent';
-import parseColors from './data/functions/parseColors';
+import parseJSON from './data/functions/parseJSON';
+import SizesComponent from './data/components/SizesComponent';
 
 
 const ProductPage = (props) => {
@@ -18,6 +19,8 @@ const ProductPage = (props) => {
     const [breadcrumbItems, setBreadcrumbItems] = useState([]);
     const [selectedColor, setSelectedColor] = useState("");
     const [availableColors, setavailableColors] = useState([]);
+    const [availableSizes, setAvailableSizes] = useState([]);
+    const [selectedSize, setSelectedSize] = useState([""])
 
     useEffect(() => {
             fetchData(setProductData, setBreadcrumbItems, category, id, productData);
@@ -25,16 +28,17 @@ const ProductPage = (props) => {
 
     useEffect(() => {
         if (productData.colors) {
-            const result = parseColors(productData.colors)
-            setavailableColors(result.colors);
-            setSelectedColor(result.colors[0])
-            console.log(availableColors)
-            console.log(selectedColor)
+            const clrs = parseJSON(productData.colors);
+            const szs = parseJSON(productData.sizes);
+            setAvailableSizes(szs.sizes)
+            setavailableColors(clrs.colors);
+            setSelectedSize(szs.sizes[0]);
+            setSelectedColor(clrs.colors[0]);
         }
         
           
         
-    }, [productData])
+    }, [productData]);
 
     return (
         <div className='product-page-container'>
@@ -58,16 +62,24 @@ const ProductPage = (props) => {
                         < ReviewsContainer />
                     </div>
 
-                    <div className='price-container'>
-                        {productData.price} лв./BGN
-                    </div>
-
-                    <div className='colors-container'>
+                    <div className='colors-outer-container'>
                         <ColorComponent 
                             colors={availableColors} 
                             selectedColor={selectedColor}
                             setSelectedColor={setSelectedColor}
                         /> 
+                    </div>
+
+                    <div className='sizes-outer-container'>
+                        <SizesComponent 
+                            sizes={availableSizes}
+                            selectedSize={selectedSize}
+                            setSelectedSize={setSelectedSize}
+                        />
+                    </div>
+
+                    <div className='price-container'>
+                        {productData.price} лв. / BGN
                     </div>
                 </div>
             </div>

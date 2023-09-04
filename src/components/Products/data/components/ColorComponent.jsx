@@ -17,8 +17,11 @@ const ColorComponent = (props) => {
 
     return (
         <div className='colors-container'>
-            <p>Color - {props.selectedColor}</p>
-            {parsedColors}
+            <p className='selected-color'>Color - {props.selectedColor}</p>
+            <div className='color-options'>
+                {parsedColors}
+            </div>
+            
             {/* {clrs} */}
         </div>
     );
