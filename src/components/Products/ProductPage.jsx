@@ -92,6 +92,17 @@ const ProductPage = (props) => {
                     <div className='price-container'>
                         {productData.price} лв. / BGN
                     </div>
+
+                    <div className='purchaseContainer'>
+                        <button
+                            className='purchase-btn'
+                            onClick={() => {}}
+                        >ADD TO CART</button>
+                        <button
+                            className='purchase-btn'
+                            onClick={() => {}}
+                        >BUY IT NOW</button>
+                    </div>
                 </div>
             </div>
             

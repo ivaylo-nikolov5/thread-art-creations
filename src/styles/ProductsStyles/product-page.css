@@ -57,12 +57,6 @@
     color: #e6f200;
 }
 
-.price-container {
-    display: flex;
-    align-items: center;
-    font-size: 2rem;
-    margin-top: 20px;
-}
 
 .colors-container {
     display: flex;
@@ -184,6 +178,43 @@
 .plus-container:active {
     background-color: #2f3c4d;
 }
+
+.price-container {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 80px;
+}
+
+.purchaseContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.purchase-btn {
+    width: 200px;
+    margin-right: 20px;
+    font-size: 1.5rem;
+    height: 50px;
+    border: 0;
+    background-color: #1F2833;
+    color: #66FCF1;
+    cursor: pointer;
+    transition: scale ease-in-out 0.2s;
+}
+
+.purchase-btn:hover {
+    scale: 1.06;
+}
+
+.purchase-btn:active {
+    transition: background-color ease-in-out 0.1s;
+    background-color: #C5C6C790;
+}
+
 /* #0B0C10 */
 /* #1F2833 */
 /* #C5C6C7 */
