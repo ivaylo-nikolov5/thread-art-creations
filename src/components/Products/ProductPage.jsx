@@ -12,6 +12,7 @@ import parseJSON from './data/functions/parseJSON';
 import SizesComponent from './data/components/SizesComponent';
 import QuantityComponent from './data/components/QuantityComponent';
 import ProductDescription from './data/components/ProductDescription';
+import SizesTable from './data/components/SizesTable';
 
 
 const ProductPage = (props) => {
@@ -24,6 +25,8 @@ const ProductPage = (props) => {
     const [availableSizes, setAvailableSizes] = useState([]);
     const [selectedSize, setSelectedSize] = useState([""])
     const [selectedQuantity, setSelectedQuantity] = useState(1);
+    const [widths, setWidths] = useState([]);
+    const [heights, setHeights] = useState([]);
 
     useEffect(() => {
             fetchData(setProductData, setBreadcrumbItems, category, id, productData);
@@ -33,10 +36,14 @@ const ProductPage = (props) => {
         if (productData.colors) {
             const clrs = parseJSON(productData.colors);
             const szs = parseJSON(productData.sizes);
+            const wdts = parseJSON(productData.widths);
+            const hgts = parseJSON(productData.heights);
             setAvailableSizes(szs.sizes)
             setavailableColors(clrs.colors);
             setSelectedSize(szs.sizes[0]);
             setSelectedColor(clrs.colors[0]);
+            setWidths(wdts.widths)
+            setHeights(hgts.heights)
         }
         
           
@@ -109,7 +116,11 @@ const ProductPage = (props) => {
 
             <div className='product-description-container'>
                 < ProductDescription description={productData.productDescription}/>
-                < SizesTable sizes={productData.sizes}/>
+                < SizesTable 
+                    sizes={availableSizes}
+                    widths={widths}    
+                    heights={heights}    
+                />
             </div>
             
         </div>

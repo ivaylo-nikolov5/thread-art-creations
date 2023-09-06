@@ -225,6 +225,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    max-width: 55%;
     color: #fff;
 }
 
@@ -235,8 +236,62 @@
 
 .description-text {
     font-size: 1.4rem;
-    max-width: 55%;
+    max-width: 90%;
 }
+
+.units-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.slash-size {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.4rem;
+}
+
+.unit-label {
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.sizes_table-container {
+    width: 40%;
+}
+
+.size-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .size-table th,
+  .size-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #66FCF1; /* White borders to make them stand out */
+    color: #fff; /* White text color */
+    font-size: 1.3rem;
+  }
+  
+  .size-table th {
+    background-color: #0B0C10; /* Dark gray background color for table headers */
+  }
+  
+  .size-table tbody tr:nth-child(even) {
+    background-color: #0B0C10; /* Slightly lighter gray background for even rows */
+  }
+  
+  .size-table tbody tr:nth-child(odd) {
+
+    background-color: #1F2833; /* Slightly darker gray background for odd rows */
+  }
+  
+  .size-table tbody tr:hover {
+    background-color: #666; /* Darker gray background for hover effect */
+  }
 
 /* #0B0C10 */
 /* #1F2833 */
