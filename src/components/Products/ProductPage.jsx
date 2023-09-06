@@ -11,6 +11,7 @@ import ColorComponent from './data/components/ColorComponent';
 import parseJSON from './data/functions/parseJSON';
 import SizesComponent from './data/components/SizesComponent';
 import QuantityComponent from './data/components/QuantityComponent';
+import ProductDescription from './data/components/ProductDescription';
 
 
 const ProductPage = (props) => {
@@ -104,6 +105,11 @@ const ProductPage = (props) => {
                         >BUY IT NOW</button>
                     </div>
                 </div>
+            </div>
+
+            <div className='product-description-container'>
+                < ProductDescription description={productData.productDescription}/>
+                < SizesTable sizes={productData.sizes}/>
             </div>
             
         </div>
