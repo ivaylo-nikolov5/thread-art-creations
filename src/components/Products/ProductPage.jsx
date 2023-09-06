@@ -13,6 +13,8 @@ import SizesComponent from './data/components/SizesComponent';
 import QuantityComponent from './data/components/QuantityComponent';
 import ProductDescription from './data/components/ProductDescription';
 import SizesTable from './data/components/SizesTable';
+import CompanyInfo from "../HomePage/CompanyInfo";
+import Footer from "../HomePage/Footer";
 
 
 const ProductPage = (props) => {
@@ -137,6 +139,11 @@ const ProductPage = (props) => {
                     widths={widths}    
                     heights={heights}    
                 />
+            </div>
+
+            <div className='footer-container'>
+                <CompanyInfo />
+                <Footer />
             </div>
             
         </div>
