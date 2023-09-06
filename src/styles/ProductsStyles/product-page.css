@@ -183,14 +183,14 @@
     display: flex;
     align-items: center;
     font-size: 2rem;
-    margin-top: 80px;
+    margin-top: 32px;
 }
 
-.purchaseContainer {
+.purchase-container {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: ce;
+    align-items: flex-start;
     margin-top: 30px;
 }
 
@@ -292,6 +292,50 @@
   .size-table tbody tr:hover {
     background-color: #666; /* Darker gray background for hover effect */
   }
+
+  .purchase-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+.product-secondary-btns {
+    margin-top: 20px;
+    display: flex;
+}
+
+.add-to-favorite-btn,
+.add-for-comparison-bnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin-right: 20px;
+    font-size: 1.5rem;
+    height: 50px;
+    border: 0;
+    background-color: #1F2833;
+    color: #66FCF1;
+    cursor: pointer;
+    transition: scale ease-in-out 0.2s;
+} 
+
+.add-to-favorite-btn:hover,
+.add-for-comparison-bnt:hover  {
+    scale: 1.06;
+}
+
+.add-to-favorite-btn:active,
+.add-for-comparison-bnt:active  {
+    transition: background-color ease-in-out 0.1s;
+    background-color: #C5C6C790;
+}
+
+.fa-heart,
+.fa-right-left {
+    margin-right: 15px;
+    font-size: 1.8rem;
+}
 
 /* #0B0C10 */
 /* #1F2833 */

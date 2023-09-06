@@ -89,7 +89,7 @@ const ProductPage = (props) => {
                     </div>
 
                     <div className='quantity-outer-container'>
-                        <p>Quantity</p>
+                        <p className='selected-color'>Quantity</p>
                         <QuantityComponent 
                             availableQuantity={productData.productsCount}
                             selectedQuantity={selectedQuantity}
@@ -101,15 +101,31 @@ const ProductPage = (props) => {
                         {productData.price} лв. / BGN
                     </div>
 
-                    <div className='purchaseContainer'>
-                        <button
-                            className='purchase-btn'
-                            onClick={() => {}}
-                        >ADD TO CART</button>
-                        <button
-                            className='purchase-btn'
-                            onClick={() => {}}
-                        >BUY IT NOW</button>
+                    <div className='purchase-container'>
+                        <div className='purchase-buttons'>
+                            <button
+                                className='purchase-btn'
+                                onClick={() => {}}
+                            >ADD TO CART
+                            </button>
+                            <button
+                                className='purchase-btn'
+                                onClick={() => {}}
+                            >BUY IT NOW
+                            </button>
+                        </div>
+
+                        <div className='product-secondary-btns'>
+                            <button className='add-to-favorite-btn'>
+                                <i class="fa-solid fa-heart"></i>
+                                Add to Favorites
+                            </button>
+
+                            <button className='add-for-comparison-bnt'>
+                                <i class="fa-solid fa-right-left"></i>
+                                Add for comparison
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
