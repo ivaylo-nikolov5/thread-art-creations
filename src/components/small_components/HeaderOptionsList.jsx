@@ -36,13 +36,6 @@ function HeaderOptionsList() {
                     </a>
 
                     <li className="menu-list-page">
-                        <span>B</span>
-                        <span>l</span>
-                        <span>o</span>
-                        <span>g</span>
-                    </li>
-
-                    <li className="menu-list-page">
                         <span>C</span>
                         <span>o</span>
                         <span>n</span>
