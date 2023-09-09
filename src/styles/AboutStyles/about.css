@@ -1,0 +1,94 @@
+.about-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content-container {
+    margin-top: 80px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-title {
+    color: #66FCF1;
+    font-size: 2.3rem;
+    border-bottom: 1px solid #66FCF1;
+    margin-bottom: 40px;
+    align-self: center;
+} 
+
+.about-thanks-p {
+    text-align: center;
+    color: #fff;
+    font-size: 1.9rem;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.about-bulletpoint {
+    color: #66FCF1;
+    font-size: 1.4rem;
+}
+
+.about-text {
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.about-image-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    background-color: #1F2833;
+    padding: 20px 10px;
+}
+
+.about-img {
+    max-width: 1200px;
+}
+
+.website-benefits-container {
+    margin-top: 20px;
+    padding-top: 30px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid #66FCF1;
+}
+
+.benefit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #66FCF1;
+}
+.fa-truck,
+.fa-dollar-sign,
+.benefit .fa-star {
+    color: #66FCF1;
+    font-size: 1.8rem;
+}
+
+.benefit-text {
+    font-size: 1.4rem;
+}
+
+
+
+
+/* #0B0C10 */
+/* #1F2833 */
+/* #C5C6C7 */
+/* #66FCF1 */
+/* #45A29E */
