@@ -11,6 +11,7 @@ import CategoryProducts from './components/Products/CategoryProducts';
 import NotFound from './components/small_components/NotFound';
 import ProductPage from './components/Products/ProductPage';
 import About from './pages/About';
+import Contacts from './pages/Contacts';
 
 
 function App() {
@@ -34,6 +35,8 @@ function App() {
                     {/* Info */}
                     <Route path="/general-terms" element={<GeneralTerms />} />
                     <Route path="/about" element={<About />} />
+                    <Route path="/contacts" element={<Contacts />} />
+
 
                     {/* Not found */}
                     <Route path='*' element={<NotFound />} />

@@ -35,15 +35,17 @@ function HeaderOptionsList() {
                         </li>
                     </a>
 
-                    <li className="menu-list-page">
-                        <span>C</span>
-                        <span>o</span>
-                        <span>n</span>
-                        <span>t</span>
-                        <span>a</span>
-                        <span>c</span>
-                        <span>t</span>
-                    </li>
+                    <a href="/contacts">
+                        <li className="menu-list-page">
+                            <span>C</span>
+                            <span>o</span>
+                            <span>n</span>
+                            <span>t</span>
+                            <span>a</span>
+                            <span>c</span>
+                            <span>t</span>
+                        </li>
+                    </a>
                 </ul>
     );
 };
