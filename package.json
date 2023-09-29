@@ -22,6 +22,7 @@
     "react-scripts": "^5.0.1",
     "react-swipe": "^6.0.4",
     "react-tooltip": "^5.20.0",
+    "reactjs-popup": "^2.0.6",
     "request": "^2.88.2",
     "swipe-js-iso": "^2.1.5",
     "thread-art-creations-server": "^1.0.0",

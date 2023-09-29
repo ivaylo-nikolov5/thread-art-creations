@@ -12,7 +12,7 @@ function Footer() {
                         <li className="info-link">Privacy policy - GDPR</li>
                         <li>FAQ</li>
                         <li className="info-link"><a href="/about" className="info-link">About us</a></li>
-                        <li className="info-link">Contacts</li>
+                        <li className="info-link"><a href="/contacts" className="info-link">Contacts</a></li>
                     </ul>
                 </div>
 

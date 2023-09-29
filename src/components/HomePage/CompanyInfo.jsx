@@ -1,8 +1,17 @@
 import React from "react";
 import "../../styles/HomeStyles/company-info.css";
 import ListItem from "../small_components/ListItem";
+import { useState } from "react";
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
+import SubscribePopup from "./SubscribePopup";
 
 function CompanyInfo() {
+    const [email, setEmail] = useState("");
+
+    function subscribeToNewsletter(event) {
+        event.preventDefault();
+    }
     return (
         <div className="company-info-container">
             <div className="company-socials">
@@ -49,21 +58,22 @@ function CompanyInfo() {
                     how it works and much more
                 </p>
 
-                <div className="newsletter-subscription-container">
+                <form className="newsletter-subscription-container" action="POST" onSubmit={subscribeToNewsletter}>
                     <input 
                         type="text" 
                         name="" 
                         id="" 
                         className="newsletter-email-field" 
-                        placeholder="Enter email"    
+                        placeholder="Enter email"
+                        onChange={(event) => setEmail(event.target.value)}    
                     />
-                    <button className="newsletter-subscribe-btn">
-                        <i class="fa-solid fa-envelope"></i>    
-                        Subscribe
-                    </button>
-                </div>
+
+                    <SubscribePopup />
+                    
+                </form>
 
             </div>
+
         </div>
     );
 };
